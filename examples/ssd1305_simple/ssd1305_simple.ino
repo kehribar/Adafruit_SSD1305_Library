@@ -13,7 +13,10 @@
 #define OLED_CLK 13
 /*---------------------------------------------------------------------*/
 // software SPI
-Adafruit_SSD1305 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
+//Adafruit_SSD1305 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
+/*---------------------------------------------------------------------*/
+// hardware SPI
+Adafruit_SSD1305 display(OLED_DC, OLED_RESET, OLED_CS);
 /*---------------------------------------------------------------------*/
 void setup()
 {                
